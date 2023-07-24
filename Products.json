@@ -1,1 +1,65 @@
-[{"title":"Sensor","description":"Sensor de estacionamiento trasero marca toyota","price":50000,"thumbnail":"./media/fotosensor","code":"113355","stock":20,"id":1},{"title":"Barra","description":"Barra anti vuelco marca toyota","price":90000,"thumbnail":"./media/fotobarra","code":"779911","stock":7,"id":2},{"title":"Cobertor","description":"Cobertor caja marca toyota","price":30000,"thumbnail":"./media/fotocobertor","code":"335577","stock":9,"id":3},{"title":"Gancho De Arrastre","description":"Enganche para arrastre de cargas","price":130000,"thumbnail":"./media/fotogancho","code":"557799","stock":15,"id":4},{"title":"Embellecedor cromado de manija","description":"Embellecedor de manijas de apertura de puertas","price":40000,"thumbnail":"./media/fotoembellecedor","code":"224466","stock":25,"id":5},{"title":"Tuercas De Seguridad","description":"Cobertor caja marca toyota","price":20000,"thumbnail":"./media/fototurcas","code":"880022","stock":50,"id":6},{"title":"Cargador inalámbrico","description":"Cargador inalámbrico marca toyota","price":100000,"thumbnail":"./media/fotocobertor","code":"446688","stock":2,"id":7}]
+[
+  {
+    "title": "Sensor",
+    "description": "Sensor de estacionamiento trasero marca toyota",
+    "price": 50000,
+    "thumbnail": "./media/fotosensor",
+    "code": "113355",
+    "stock": 20,
+    "id": 1
+  },
+  {
+    "title": "Barra",
+    "description": "Barra anti vuelco marca toyota",
+    "price": 90000,
+    "thumbnail": "./media/fotobarra",
+    "code": "779911",
+    "stock": 7,
+    "id": 2
+  },
+  {
+    "title": "Cobertor",
+    "description": "Cobertor caja marca toyota",
+    "price": 30000,
+    "thumbnail": "./media/fotocobertor",
+    "code": "335577",
+    "stock": 9,
+    "id": 3
+  },
+  {
+    "title": "Gancho De Arrastre",
+    "description": "Enganche para arrastre de cargas",
+    "price": 130000,
+    "thumbnail": "./media/fotogancho",
+    "code": "557799",
+    "stock": 15,
+    "id": 4
+  },
+  {
+    "title": "Embellecedor cromado de manija",
+    "description": "Embellecedor de manijas de apertura de puertas",
+    "price": 40000,
+    "thumbnail": "./media/fotoembellecedor",
+    "code": "224466",
+    "stock": 25,
+    "id": 5
+  },
+  {
+    "title": "Tuercas De Seguridad",
+    "description": "Cobertor caja marca toyota",
+    "price": 20000,
+    "thumbnail": "./media/fototurcas",
+    "code": "880022",
+    "stock": 50,
+    "id": 6
+  },
+  {
+    "title": "Cargador inalámbrico",
+    "description": "Cargador inalámbrico marca toyota",
+    "price": 100000,
+    "thumbnail": "./media/fotocobertor",
+    "code": "446688",
+    "stock": 2,
+    "id": 7
+  }
+]

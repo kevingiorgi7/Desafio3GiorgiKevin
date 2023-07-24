@@ -1,6 +1,6 @@
 import { existsSync, promises } from 'fs'
 
-class ProductManager {
+export default class ProductManager {
     constructor(path) {
         this.path = path
     }
