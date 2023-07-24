@@ -122,9 +122,9 @@ const product5 = {
 }
 const product6 = {
     title: 'Tuercas De Seguridad',
-    description: 'Cobertor caja marca toyota',
+    description: 'Tuercas De Seguridad',
     price: 20000,
-    thumbnail: './media/fototurcas',
+    thumbnail: './media/fototuercas',
     code: '880022',
     stock: 50,
 }
@@ -132,32 +132,60 @@ const product7 = {
     title: 'Cargador inalámbrico',
     description: 'Cargador inalámbrico marca toyota',
     price: 100000,
-    thumbnail: './media/fotocobertor',
+    thumbnail: './media/fotocargador',
     code: '446688',
     stock: 2,
 }
+const product8 = {
+    title: 'Llanta',
+    description: 'Llanta de aleación 18¨',
+    price: 80000,
+    thumbnail: './media/fotollanta',
+    code: '668822',
+    stock: 16,
+}
+const product9 = {
+    title: 'Zócalo de aluminio',
+    description: 'Embellecedor y protector de zócalos del vehículo',
+    price: 30000,
+    thumbnail: './media/fotozocalo',
+    code: '135246',
+    stock: 5,
+}
+const product10 = {
+    title: 'Porta Bicicleta',
+    description: 'Accesorio para el transporte simple y seguro de bicicletas',
+    price: 45000,
+    thumbnail: './media/fotoportabici',
+    code: '798017',
+    stock: 1,
+}
+
 
 const objUpdate = {
     price: 70000,
     stock: 10
 }
 
-async function prueba() {
-    //const manager = new ProductManager('Products.json')
-    //await manager.addProducts(product1)
-    //await manager.addProducts(product2)
-    //await manager.addProducts(product3)
-    //await manager.addProducts(product4)
-    //await manager.addProducts(product5)
-    //await manager.addProducts(product6)
-    //await manager.addProducts(product7)
+/* async function prueba() {
+    const manager = new ProductManager('Products.json')
+    await manager.addProducts(product1)
+    await manager.addProducts(product2)
+    await manager.addProducts(product3)
+    await manager.addProducts(product4)
+    await manager.addProducts(product5)
+    await manager.addProducts(product6)
+    await manager.addProducts(product7)
+    await manager.addProducts(product8)
+    await manager.addProducts(product9)
+    await manager.addProducts(product10)
     //await manager.getProductsById(1)
     //await manager.getProductsById(20)
     //await manager.deleteProduct(2)
     //await manager.updateProduct(1,objUpdate)
 
-    //const products = await manager.getProducts()
-    //console.log(products);
+    const products = await manager.getProducts()
+    console.log(products);
 }
 
-//prueba()
+prueba() */

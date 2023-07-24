@@ -27,11 +27,14 @@ app.get('/products', async (req,res)=>{
 app.get('/products/:pid', async (req,res)=>{
     const products = await getAllProducts()
     let id = Number(req.params.pid)
-    let productId = products.find(p=>p.id===id) 
+    let productId = products.find(p=>p.id===id)
+    if(!productId) {
+        productId = {"ERROR":"El ID ingresado no existe"}
+    }
     res.send({productId})
 })
 
 
 app.listen(8080, ()=>{
     console.log('Escuchando al puerto: 8080');
-})    
+})     
