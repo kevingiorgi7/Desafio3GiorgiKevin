@@ -6,35 +6,35 @@ const manager = new ProductManager("Products.json");
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
-async function getAllProducts() {
-    const products = await manager.getProducts();
-    return products
-    //console.log(products);
-}
-// getAllProducts();
+
 
 app.get('/', (req,res)=>{
     res.send('¡Hola! Escuchando al puerto: 8080')
 })
 
 app.get('/products', async (req,res)=>{
-    const products = await getAllProducts()
-    let limit = req.query.limit;
-    let productsLimited = products.slice(0,limit);
-    res.send({productsLimited})
+    try {
+        const products = await manager.getProducts()
+        let limit = req.query.limit;
+        let productsLimited = limit? products.slice(0,limit) : products;
+        res.json(productsLimited)
+    } catch (error) {
+        return error
+    }
 })
 
 app.get('/products/:pid', async (req,res)=>{
-    const products = await getAllProducts()
-    let id = Number(req.params.pid)
-    let productId = products.find(p=>p.id===id)
-    if(!productId) {
-        productId = {"ERROR":"El ID ingresado no existe"}
+    try {
+            let id = Number(req.params.pid)
+            const product= await manager.getProductsById(id)
+            res.send({product})
+    } catch (error) {
+        return error
     }
-    res.send({productId})
+
 })
 
 
 app.listen(8080, ()=>{
     console.log('Escuchando al puerto: 8080');
-})     
+})      

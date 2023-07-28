@@ -45,7 +45,7 @@ export default class ProductManager {
             if (!idExist) {
                 return console.log(`ERROR: El ID "${idFind}" no fue encontrado`);
             }
-            return console.log(`El ID buscado por el usuario es del producto: `, idExist);
+            return console.log(`El ID buscado por el usuario es del producto: `, idExist), idExist;
         } catch (error) {
             return error
         }
