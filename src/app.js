@@ -15,7 +15,7 @@ app.get('/', (req,res)=>{
 app.get('/products', async (req,res)=>{
     try {
         const products = await manager.getProducts()
-        let limit = req.query.limit;
+        let limit = Number(req.query.limit);
         let productsLimited = limit? products.slice(0,limit) : products;
         res.json(productsLimited)
     } catch (error) {
@@ -27,7 +27,7 @@ app.get('/products/:pid', async (req,res)=>{
     try {
             let id = Number(req.params.pid)
             const product= await manager.getProductsById(id)
-            res.json(product)
+            res.send({product})
     } catch (error) {
         return error
     }
