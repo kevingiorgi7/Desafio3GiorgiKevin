@@ -27,7 +27,7 @@ app.get('/products/:pid', async (req,res)=>{
     try {
             let id = Number(req.params.pid)
             const product= await manager.getProductsById(id)
-            res.send({product})
+            res.json(product)
     } catch (error) {
         return error
     }
