@@ -7,12 +7,11 @@ export default class ProductManager {
 
     async getProducts() {
         try {
-            if (existsSync(this.path)) {
-                const infoProducts = await promises.readFile(this.path, 'utf-8')
-                return JSON.parse(infoProducts)
-            } else {
+            if (!existsSync(this.path)) {
                 return []
             }
+            const infoProducts = await promises.readFile(this.path, 'utf-8')
+            return JSON.parse(infoProducts)
         } catch (error) {
             return error
         }
