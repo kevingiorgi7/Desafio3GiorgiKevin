@@ -13,7 +13,7 @@ export default class ProductManager {
             const infoProducts = await promises.readFile(this.path, 'utf-8')
             return JSON.parse(infoProducts)
         } catch (error) {
-            return error
+            throw error
         }
     }
 
@@ -33,7 +33,7 @@ export default class ProductManager {
             await promises.writeFile(this.path, JSON.stringify(productsPrev))
             return console.log(`El producto: "${objProducts.title}", fue agregado exitosamente con el ID "${id}"`);
         } catch (error) {
-            return error
+            throw error
         }
     }
 
@@ -46,7 +46,7 @@ export default class ProductManager {
             }
             return console.log(`El ID buscado por el usuario es del producto: `, idExist), idExist;
         } catch (error) {
-            return error
+            throw error
         }
     }
 
@@ -63,7 +63,7 @@ export default class ProductManager {
             await promises.writeFile(this.path, JSON.stringify(productsPrev))
             return console.log(`El ID "${idUpdate}" fue actualizado`);
         } catch (error) {
-            return error
+            throw error
         }
     }
 
@@ -74,7 +74,7 @@ export default class ProductManager {
             await promises.writeFile(this.path, JSON.stringify(newArrayProducts))
             return console.log(`El ID "${idDelete}" fue eliminado`);
         } catch (error) {
-            return error
+            throw error
         }
     }
 }

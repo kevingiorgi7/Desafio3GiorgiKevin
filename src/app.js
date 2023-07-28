@@ -19,7 +19,7 @@ app.get('/products', async (req,res)=>{
         let productsLimited = limit? products.slice(0,limit) : products;
         res.json(productsLimited)
     } catch (error) {
-        return error
+        throw error
     }
 })
 
@@ -29,7 +29,7 @@ app.get('/products/:pid', async (req,res)=>{
             const product= await manager.getProductsById(id)
             res.send({product})
     } catch (error) {
-        return error
+        throw error
     }
 
 })
